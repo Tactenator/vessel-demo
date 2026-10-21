@@ -1,0 +1,154 @@
+/* ==========================================================================
+   PAYLOAD CMS ADMIN CORE STYLING OVERHAUL
+   Matches the Modern Slate-50 / Sky-Blue (#41a6f4) App Brand Identity
+   ========================================================================== */
+
+@layer payload {
+  :root {
+    /* --- Core Brand Theme Variables --- */
+    --theme-bg: #f8fafc;           /* slate-50 background look */
+    --theme-text: #1e293b;         /* slate-800 text color */
+    
+    /* --- Elevation Colors (Cards, Panels, Containers) --- */
+    --theme-elevation-0: #f8fafc;  /* App canvas backing background */
+    --theme-elevation-50: #ffffff; /* Base container white */
+    --theme-elevation-100: #ffffff;/* Cards & Surface elements */
+    --theme-elevation-150: #f1f5f9;/* Input backgrounds on focus */
+    --theme-elevation-200: #e2e8f0;/* Secondary structural nodes */
+
+    /* --- Primary Theme Accent Re-mapping (#41a6f4 / Sky-Blue) --- */
+    --theme-input-bg: #ffffff;
+    --theme-accent: #41a6f4;
+    --theme-accent-200: rgba(65, 166, 244, 0.1);
+    --theme-accent-400: #3592dd;   /* Hover state darker variation */
+    
+    /* --- UI Accents & Form Borders --- */
+    --theme-border-color: #e2e8f0; /* slate-200 layout border splitters */
+    --theme-success: #10b981;
+    --theme-error: #f43f5e;        /* rose-500 validation color */
+
+    /* --- Global Sizing & Interface Overrides --- */
+    --font-body: 'Inter', system-ui, sans-serif;
+    --style-radius-m: 12px;        /* Consistent smooth rounded-xl corners */
+    --style-radius-s: 8px;
+  }
+
+  /* --- Sidebar Navigation Structuring --- */
+  .nav {
+    background-color: #f8fafc !important;
+    border-right: 1px solid #e2e8f0;
+
+    /* Styling individual route link list elements */
+    &__link {
+      color: #475569 !important; /* slate-600 navigation typography */
+      font-weight: 500;
+      border-radius: 12px;
+      margin: 2px 8px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #ffffff !important;
+        color: #0f172a !important;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      &--active {
+        background-color: #ffffff !important;
+        color: #41a6f4 !important;
+        font-weight: 600;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(226, 232, 240, 0.6);
+
+        /* Distinctive left accent vertical bar alignment marker */
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 12px;
+          bottom: 12px;
+          width: 4px;
+          border-radius: 0 4px 4px 0;
+          background-color: #41a6f4;
+        }
+      }
+    }
+    
+    /* System Branding Header Node */
+    &__header {
+      border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  /* --- Buttons, Form Control Fields, & Input States --- */
+  .btn {
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    text-transform: none !important; /* Remove payload default capitalizations */
+    letter-spacing: normal !important;
+
+    &--style-primary {
+      background-color: #41a6f4 !important;
+      border-color: #41a6f4 !important;
+      color: #ffffff !important;
+      
+      &:hover {
+        background-color: #3592dd !important;
+        border-color: #3592dd !important;
+      }
+    }
+  }
+
+  /* Standard Native Field Inputs (Kept separate to protect compiler suffix rules) */
+  input[type="text"], 
+  input[type="email"], 
+  input[type="password"],
+  .textarea {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+    background-color: rgba(248, 250, 252, 0.5) !important; /* slate-50 transparent */
+    transition: all 0.2s ease !important;
+
+    &:focus {
+      background-color: #ffffff !important;
+      border-color: #41a6f4 !important;
+      box-shadow: 0 0 0 1px #41a6f4 !important;
+    }
+  }
+
+  /* Payload Third-party Dropdown Controller Node Layouts */
+  .react-select__control {
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+    background-color: rgba(248, 250, 252, 0.5) !important;
+    transition: all 0.2s ease !important;
+
+    &:focus,
+    &--is-focused {
+      background-color: #ffffff !important;
+      border-color: #41a6f4 !important;
+      box-shadow: 0 0 0 1px #41a6f4 !important;
+    }
+  }
+
+  /* --- Dashboard Layout Cards Architecture --- */
+  .card {
+    border-radius: 16px !important; /* matching your custom rounded-2xl panels */
+    border: 1px solid #e2e8f0 !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+    }
+  }
+
+  /* Top Global Header Topbar Row Adjustments */
+  .app-header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+}

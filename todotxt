@@ -1,0 +1,46 @@
+To Do
+----------
+DONE:Vehicle Files - Add file uploads
+DONE:Vehicle Gas Status - Add means for people to say when a car needs more gas
+DONE:Drivers - Assign a car to a driver? Also, color coding Drivers. Will a driver always have the same van?
+DONE:Distance - Calculate distance between locations - API for this? 
+DONE:Daily tasks section - add a section for drivers to check off on daily tasks
+DONE:Tasks submit - Prevent drivers from submitting a tasks completed again if they've already submitted it.
+DONE:Google Maps API - Add pictures of the location. 
+DONE:Job Status - Create a log when a status is changed
+DONE:Double check searches on the backend are working
+DONE:Create a boolean for active employees. If not active, disable login.
+DONE:Clients - Add ability to upload photos of clients. 
+DONE:Timer - Have a way to track time driving. Create a button that drives can hit to track their driving time. 
+DONE:Create a means to show an error on the page as well. For incorrect logins, lockouts, etc.
+DONE:Create a way to send a message to all drivers, not just one.
+DONE:Admin board - Create a user that will show all drives, all status of drives, etc.
+DONE:Create a log for when a driver goes to get gas - date/time/money spent, etc.
+DONE:Make locations a drop down. Should be able to select, or add a new location from that line. Helps save typing same address over and over again.
+DONE:Create calendar for managers to view all drives/upcoming drives that day or the rest of the month.
+DONE:Finish Google Map and Poly Lines
+DONE:Make sure we have separate timers for each drive
+DONE:Upon status change, start or stop timer. 
+DONE:Add a way to add notes at the end of a drive just in case anything happened or needs to be notated.
+DONE:Add a way to for drivers to see who is on call for that weekend. 
+DONE:Fix timer - needs to show the actual time of the drive at the very end. Currently, it does not. 
+DONE:Changing status to complete does not stop the timer, but restarts it. 
+Maps on drive are not loading. 
+DONE:For clients, uploading pictures isn't working.
+DONE:Fix images on messages - not sure what that is. Maybe just needs a logo.
+DONE:File uploads on expenditures not working - works, but not showing on documents. Also, needs to show preview of what's been uploaded.
+Deliveries - Generating path causes an error. 
+DONE:On locations, format phone numbers like everything else.
+DONE:Photo uploads work - but, no photo is being shown.
+
+
+-------
+Password - Forget password option?
+DONE:Make a schedule? Show what person is on call for that weekend and maybe an option for scheduling?
+DONE:Create a way to alert drivers of a new message
+DONE:Create a collection for any cash invoices - for when a client pays cash
+DONE:Admin users - certain users read only - add admin rules and priveleges based on user hierarchy
+DONE:Jobs - Add admin notes - should only show on admin side.
+DONE:Add scheduling to calendar on the manager view.
+
+
