@@ -130,7 +130,7 @@ export default async function Messages() {
                 Inbox
               </h1>
               <p className="mt-2 text-sm text-slate-500 leading-relaxed">
-                A list of all messages sent straight to your inbox from SD Homecare Management.
+                A list of all messages sent straight to your inbox from Vessel Management.
               </p>
             </div>
 

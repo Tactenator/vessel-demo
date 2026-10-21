@@ -65,7 +65,7 @@ export default function Drawer({ messages }) {
                           <div className="flex items-center gap-2">
                             <img
                               alt={selectedMessage.sender.fullName}
-                              src="/sd-homecare-logo.png"
+                              src="/vessel-network.jpg"
                               className="size-8 rounded-full bg-slate-100"
                             />
                             <div>

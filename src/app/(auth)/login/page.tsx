@@ -36,8 +36,8 @@ export default function Login() {
       {/* Branding Hub */}
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
         <img
-          alt="SD Home Care"
-          src="/sd-homecare-logo.png"
+          alt="Vessel"
+          src="/vessel-network.jpg"
           className="mx-auto h-16 w-auto object-contain drop-shadow-2xs"
         />
         <h2 className="mt-4 text-2xl font-bold tracking-tight text-slate-900">

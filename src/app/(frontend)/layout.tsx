@@ -5,8 +5,8 @@ import React from 'react'
 import '../globals.css'
 
 export const metadata = {
-  description: 'SD Homecare Transportation App',
-  title: 'SD Homecare Transportation App',
+  description: 'Vessel Transportation App',
+  title: 'Vessel Transportation App',
 }
 
 export default async function RootLayout(props: { children: React.ReactNode }) {

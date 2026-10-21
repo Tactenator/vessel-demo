@@ -243,7 +243,7 @@ export default function Sidebar({ hasManagementView }: SidebarProps) {
             {/* Header/Logo */}
             <div className="flex h-20 shrink-0 items-center border-b border-slate-200/60">
               <div className="h-9 w-9 rounded-xl bg-[#41a6f4] flex items-center justify-center font-bold text-white text-xl shadow-md shadow-sky-200">
-                <img className="rounded-xl" src="/sd-homecare-logo.png" alt="logo" />
+                <img className="rounded-full" src="/vessel-network.jpg" alt="logo" />
               </div>
               <span className="ml-3 font-bold text-slate-800 text-lg tracking-tight">
                 Dashboard
